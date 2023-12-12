@@ -15,7 +15,7 @@
             }
         }
 
-        function jsToNaviceEventCall() { // iOS 기준 전달
+        function jsToNativeEventCall() { // iOS 기준 전달
             let messageToSend = document.getElementById("messageToSend")
             const sendData = { message: messageToSend.value }; // iOS 는 key: value 형식으로 작성하여 전달 가능
             // const sendData = { message: "messageToSend" }; 
@@ -45,9 +45,9 @@
     <p></p>
     <h2 class="">JS에서 네이티브로 전달</h2>
     <input type="text" placeholder="전달할 내용을 입력하세요" name="messageToSend" id="messageToSend"/>
-    <button onclick="jsToNaviceEventCall();">네이티브로 전달</button>
+    <button onclick="jsToNativeEventCall();">네이티브로 전달</button>
 
     <h2 class="">네이티브에서 입력한 내용</h2>
-    <input name="native_input" id="navice_input" value="" />
+    <input name="native_input" id="native_input" value="" />
 </body>
 </html>
