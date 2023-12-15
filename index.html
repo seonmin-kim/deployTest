@@ -35,19 +35,28 @@
     </script>
 </head>
 <body>
-    <h2>빈칸을 채우시고 알림 띄우기를 클릭하시면 알림이 띄워집니다.</h2>
-    <p></p>
-    <h2 class="">네이티브에서 호출할 JS 함수 이름 showAlert(메세지)</h2>
-    <form method="post">
-        <input type="text" name="name" id="name" />
-        <input type="submit" name="send" id="send" value="알림띄우기" />
-    </form>
-    <p></p>
-    <h2 class="">JS에서 네이티브로 전달</h2>
-    <input type="text" placeholder="전달할 내용을 입력하세요" name="messageToSend" id="messageToSend"/>
-    <button onclick="jsToNativeEventCall();">네이티브로 전달</button>
+    <div>
+        <h2>빈칸을 채우시고 알림 띄우기를 클릭하시면 알림이 띄워집니다.</h2>
+        <p></p>
+        <h2 class="">네이티브에서 호출할 JS 함수 이름 showAlert(메세지)</h2>
+        <form method="post">
+            <input type="text" name="name" id="name" />
+            <input type="submit" name="send" id="send" value="알림띄우기" />
+        </form>
+        <p></p>
+        <h2 class="">JS에서 네이티브로 전달</h2>
+        <input type="text" placeholder="전달할 내용을 입력하세요" name="messageToSend" id="messageToSend"/>
+        <button onclick="jsToNativeEventCall();">네이티브로 전달</button>
 
-    <h2 class="">네이티브에서 입력한 내용</h2>
-    <input name="native_input" id="native_input" value="" />
+        <h2 class="">네이티브에서 입력한 내용</h2>
+        <input name="native_input" id="native_input" value="" />
+
+        <p></p>
+        <a href="tel:010-3267-5309">고객센터에 전화걸기</a>
+        <p></p>
+        <a href="mailto:smkim@kggroup.co.kr">이메일 보내기</a>
+        <p></p>
+        <a href="https://www.youtube.com">유튜브로 이동하기</a>
+    </div>
 </body>
 </html>
